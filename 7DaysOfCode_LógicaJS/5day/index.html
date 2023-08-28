@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .listas{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <label for="">Escolha o tipo do item a ser adicionar</label>
@@ -19,12 +26,41 @@
     <label  for="">adicionar item na lista </label>
     <input id="item" type="text">
     <button onclick="lista()">Adicionar</button>
-
+<div class="listas">
+<div>
     <ul id="frutasL">
         <label for="">Frutas</label>
-    
-
     </ul>
+</div>
+<div>
+    <ul id="legumeL">
+        <label for="">legumes</label>
+    </ul>
+</div>
+<div>
+    <ul id="limpezaL">
+        <label for="">limpeza</label>
+    </ul>
+</div>
+<div>
+    <ul id="congeladoL">
+        <label for="">congelado</label>
+    </ul>
+</div>
+<div>
+    <ul id="outroL">
+        <label for="">outros</label>
+    </ul>
+</div>
+</div>
+
+<h3>Lista de compras resumida:</h3>
+<p id="rfruta">Frutas: </p>
+<p id="rlegume">Legumes: </p>
+<p id="rlimpeza">Limpeza: </p>
+<p id="rcongelado">Congelado: </p>
+<p id="routro">Outros: </p>
+
     <script src="script.js"></script>
 </body>
 </html>
