@@ -60,9 +60,11 @@ function fruta(nome){
     alert(frutaLista)
     
     let ul = document.getElementById('frutasL')
+
     let listc = document.createElement("li")
     listc.innerHTML=(frutaLista)
-   ul.appendChild(listc)
+
+    ul.appendChild(listc)
 
 
 }
