@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
     <style>
-        .a{
+        .listas{
             display: flex;
-           
+            justify-content: center;
         }
     </style>
 </head>
 <body>
-    <label for="">Escolha o tipo do item a ser adicionar</label>
+    <label for="">Escolha o tipo do item a ser adicionar ou removido</label>
     <select id="tipo" name="select">
         <option value="fruta">Frutas</option>
         <option value="legume" >legumes</option>
@@ -20,37 +22,58 @@
         <option value="congelado">congelados</option>
         <option value="outro">outros</option>
       </select>
-     
+  <br>
+  <br>
 
     <label  for="">adicionar item na lista </label>
     <input id="item" type="text">
-    <button onclick="lista()">Adicionar</button>
+    <button onclick="listaAdicionar()">Adicionar</button>
 
-    <div class="a">
-<div class="t">
+<br>
+<br>
+    <button onclick="removerInicio()">Remover item do inicio da lista</button>
+    <button onclick="removerFinal()">Remover item do final da lista</button>
+    <br>
+    <br>
+    <label for="">Nome do item</label>
+    <input id="nomeRemover" type="text">
+    <button onclick="removerNome()">Remover</button>
+
+<!-- <div class="listas">
+<div>
     <ul id="frutasL">
         <label for="">Frutas</label>
-    </ul></div>
-
-    <div class="t">
-    <ul id="legume">
-        <label for="">Frutas</label>
-    </ul></div>
-
-    <div class="t">
+    </ul>
+</div>
+<div>
+    <ul id="legumeL">
+        <label for="">legumes</label>
+    </ul>
+</div>
+<div>
     <ul id="limpezaL">
-        <label for="">Frutas</label>
-    </ul></div>
-
-    <div class="t">
+        <label for="">limpeza</label>
+    </ul>
+</div>
+<div>
     <ul id="congeladoL">
-        <label for="">Frutas</label>
-    </ul></div>
-
-    <div class="t">
+        <label for="">congelado</label>
+    </ul>
+</div>
+<div>
     <ul id="outroL">
-        <label for="">Frutas</label>
-    </ul></div></div>
+        <label for="">outros</label>
+    </ul>
+</div>
+</div> -->
+
+<h3>Lista de compras resumida:</h3>
+<p id="rfruta">Frutas: </p>
+<p id="rlegume">Legumes: </p>
+<p id="rlimpeza">Limpeza: </p>
+<p id="rcongelado">Congelado: </p>
+<p id="routro">Outros: </p>
+
     <script src="script.js"></script>
 </body>
 </html>

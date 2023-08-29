@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
     <style>
-        .a{
+        .listas{
             display: flex;
-           
+            justify-content: center;
         }
     </style>
 </head>
@@ -20,37 +22,52 @@
         <option value="congelado">congelados</option>
         <option value="outro">outros</option>
       </select>
-     
+     <br>
 
     <label  for="">adicionar item na lista </label>
     <input id="item" type="text">
     <button onclick="lista()">Adicionar</button>
 
-    <div class="a">
-<div class="t">
+    <br>
+
+    <button>Remover item do inicio</button>
+    <button>Remover</button>
+
+<div class="listas">
+<div>
     <ul id="frutasL">
         <label for="">Frutas</label>
-    </ul></div>
-
-    <div class="t">
-    <ul id="legume">
-        <label for="">Frutas</label>
-    </ul></div>
-
-    <div class="t">
+    </ul>
+</div>
+<div>
+    <ul id="legumeL">
+        <label for="">legumes</label>
+    </ul>
+</div>
+<div>
     <ul id="limpezaL">
-        <label for="">Frutas</label>
-    </ul></div>
-
-    <div class="t">
+        <label for="">limpeza</label>
+    </ul>
+</div>
+<div>
     <ul id="congeladoL">
-        <label for="">Frutas</label>
-    </ul></div>
-
-    <div class="t">
+        <label for="">congelado</label>
+    </ul>
+</div>
+<div>
     <ul id="outroL">
-        <label for="">Frutas</label>
-    </ul></div></div>
+        <label for="">outros</label>
+    </ul>
+</div>
+</div>
+
+<h3>Lista de compras resumida:</h3>
+<p id="rfruta">Frutas: </p>
+<p id="rlegume">Legumes: </p>
+<p id="rlimpeza">Limpeza: </p>
+<p id="rcongelado">Congelado: </p>
+<p id="routro">Outros: </p>
+
     <script src="script.js"></script>
 </body>
 </html>
