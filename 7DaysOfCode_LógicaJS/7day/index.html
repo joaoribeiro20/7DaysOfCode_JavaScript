@@ -9,11 +9,20 @@
             margin: 5px;
             
         }
+        .tela{
+            width: 135px;
+            height: 15px;
+            border: 3px solid black;
+            margin: 0px;
+            padding: 0%;
+            font-size: 15px;
+        }
     </style>
+    
 </head>
 <body>
-
-    <input id="tela" type="text">
+    <div class="tela" id="tela"><span id="telaValor1"> </span> <span id="telaOperador"></span> <span id="telaValor2"></span> <span id="res"> </span></div>
+    
     <br>
     <button  onclick="dividir()">/</button>
     <button  onclick="mult()">x</button>
@@ -34,7 +43,7 @@
     <button  onclick="tres()">3</button>
     <br>
     <button  onclick="zero()">0</button>
-    <button  onclick="teste()">c</button>
+    <button  onclick="novoCalculo()">c</button>
     <button  onclick="calcular()">=</button>
     
 
